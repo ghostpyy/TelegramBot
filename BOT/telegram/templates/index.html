@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+    <meta charset="UTF-8">
+    <title>mysite</title>
+</head>
+<body>
+
+<form>
+    <h1>
+        моя страница
+    </h1>
+    <h1>
+         <a href="{% url 'friends' %}"  class="btn btn-primary">friends</a>
+        <a href="telegram"  class="btn btn-primary">telegram</a>
+    </h1>
+    <img src="{% static 'kartinka.jpg' %}"/>
+    <br/>
+    <button>нажать</button>
+
+</form>
+</body>
+</html>
